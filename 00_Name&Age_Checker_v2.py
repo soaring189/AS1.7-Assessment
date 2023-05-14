@@ -1,4 +1,4 @@
-#Make it in to a function
+#Make it into a function
 def NameAgeChecker():
     while True:
         name = input("Please input your name: ")
