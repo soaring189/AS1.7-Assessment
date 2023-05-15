@@ -8,7 +8,8 @@ def NameAgeChecker():
         name = input("Please input your name: ")
         age = input("Please input your age: ")
         #Confirm user's name and age
-        confirm = input(f"Name: {name}. Age: {age}. Please enter Yes/No: ").upper()
+        confirm = input(f"Name: {name}. Age: {age}. "
+                        f"Please enter Yes/No: ").upper()
         #If it's not YES or Y, then loops again until it's YES/Y
         if confirm == "Y" or confirm == "YES":
             break
@@ -31,7 +32,8 @@ def Say_rules():
           "A:Maori numbers test\n"
           "B:Maori months test\n"
           "C:Maori days test\n"
-          "There are ten questions for each test, and you get one point for each correct answer. See how many points you'll get.")
+          "There are ten questions for each test, and you get one point for "
+          "each correct answer. See how many points you'll get.")
 
 
 def Maori_numbers():
@@ -41,9 +43,11 @@ def Maori_numbers():
         #Choose a random number
         random_number = random.randint(1, 10)
         #Input user's answer
-        user_answer = input(f"What is number{random_number} in Maori language: ").lower()
+        user_answer = input(f"What is number{random_number} "
+                            f"in Maori language: ").lower()
         #Define the correct answer
-        number_list = ["tahi", "rua", "toru", "whā", "rima", "ono", "whitu", "waru", "iwa", "tekau"]
+        number_list = ["tahi", "rua", "toru", "whā", "rima", "ono", "whitu",
+                       "waru", "iwa", "tekau"]
         if user_answer == number_list[random_number-1]:
             print("Correct!")
             score += 1
@@ -65,10 +69,15 @@ def Maori_months():
         # Choose a random number
         random_number = random.randint(1, 12)
         # Input user's answer
-        user_answer = input(f"What is the {random_number}th month in Maori language: ").lower()
+        user_answer = input(f"What is the {random_number}th month "
+                            f"in Maori language: ").lower()
         # Define the correct answer
-        month_list = ["hānuere", "hui tanguru", "poutū", "aperira", "me", "pipiri", "hōngongoi", "awatea", "mahuru", "whiringa-ā-rangi", "whiringa ā-rangi", "haki"]
-        month_list1 = ["hanuere", "hui tanguru", "poutu", "aperira", "me", "pipiri", "hongongoi", "awatea", "mahuru", "whiringa-a-rangi", "whiringa a-rangi", "haki"]
+        month_list = ["hānuere", "hui tanguru", "poutū", "aperira", "me",
+                      "pipiri", "hōngongoi", "awatea", "mahuru",
+                      "whiringa-ā-rangi", "whiringa ā-rangi", "haki"]
+        month_list1 = ["hanuere", "hui tanguru", "poutu", "aperira", "me",
+                       "pipiri", "hongongoi", "awatea", "mahuru",
+                       "whiringa-a-rangi", "whiringa a-rangi", "haki"]
         if user_answer == month_list[random_number-1]:
             print("Correct!")
             score += 1
@@ -90,10 +99,13 @@ def Maori_days():
         # Choose a random number
         random_number = random.randint(1, 7)
         # Input user's answer
-        user_answer = input(f"What is the {random_number}th day in the week in Maori language: ").lower()
+        user_answer = input(f"What is the {random_number}th day in the week "
+                            f"in Maori language: ").lower()
         # Define the correct answer
-        day_list = ["mane", "tūrei", "te wenerei", "tāite", "paraire", "hātarei", "rātapu"]
-        day_list1 = ["mane", "turei", "te wenerei", "taite", "paraire", "hatarei", "ratapu"]
+        day_list = ["mane", "tūrei", "te wenerei", "tāite", "paraire",
+                    "hātarei", "rātapu"]
+        day_list1 = ["mane", "turei", "te wenerei", "taite", "paraire",
+                     "hatarei", "ratapu"]
         if user_answer == day_list[random_number-1]:
             print("Correct!")
             score += 1
