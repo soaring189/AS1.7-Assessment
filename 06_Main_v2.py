@@ -127,7 +127,7 @@ def Estimate_score(score):
     if 0 < score <= 5:
         print("Maybe you need more revision.")
     if 5 < score <= 8:
-        print("Good job, You got more than half the score")
+        print("Good job, You got more than half the score.")
     if score == 9:
         print("Great work, you got nearly all correct!")
     if score == 10:
